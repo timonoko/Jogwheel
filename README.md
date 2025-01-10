@@ -14,3 +14,4 @@ The wheel has 5 pin connector, from left
 
 5: pin ORA in jogwheel.py
 
+Portista.sh turns esp32 serial port signals into Cinelerra-keystrokes.
