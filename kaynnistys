@@ -1,0 +1,6 @@
+mpremote u0 run jogwheel.py &
+
+sleep 2
+
+portista
+

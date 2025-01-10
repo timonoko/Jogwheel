@@ -1,0 +1,2 @@
+mpremote u0 cp jogwheel.py :jogwheel.py
+mpremote u0 run jogwheel.py

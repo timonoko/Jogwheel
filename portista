@@ -1,0 +1,15 @@
+stty -F /dev/ttyUSB0 115200
+
+while true; do
+read I < /dev/ttyUSB0
+if echo "$I" | grep "JR" ; then xdotool key KP_1 ; fi
+if echo "$I" | grep "JL" ; then xdotool key KP_4 ; fi
+if echo "$I" | grep "V 1" ; then xdotool key KP_5 ; fi
+if echo "$I" | grep "O 1" ; then xdotool key KP_2 ; fi
+if echo "$I" | grep "V 2" ; then xdotool key KP_6 ; fi
+if echo "$I" | grep "O 2" ; then xdotool key KP_3 ; fi
+if echo "$I" | grep "V 3" ; then xdotool key KP_6 ; fi
+if echo "$I" | grep "O 3" ; then xdotool key KP_3 ; fi
+if echo "$I" | grep "V 4" ; then xdotool key KP_Add ; fi
+if echo "$I" | grep "O 4" ; then xdotool key KP_Enter ; fi
+done
