@@ -1,0 +1,19 @@
+mpremote u0 run jogwheel.py &
+
+sleep 2
+
+stty -F /dev/ttyUSB0 115200
+
+while true; do
+read I < /dev/ttyUSB0
+if echo "$I" | grep "JR" ; then xdotool key period ; fi
+if echo "$I" | grep "JL" ; then xdotool key comma ; fi
+if echo "$I" | grep "V 1" ; then xdotool key J ; fi
+if echo "$I" | grep "O 1" ; then xdotool key L ; fi
+if echo "$I" | grep "V 2" ; then xdotool key J ; fi
+if echo "$I" | grep "O 2" ; then xdotool key L ; fi
+if echo "$I" | grep "V 3" ; then xdotool key J ; fi
+if echo "$I" | grep "O 3" ; then xdotool key L ; fi
+if echo "$I" | grep "V 4" ; then xdotool key J ; fi
+if echo "$I" | grep "O 4" ; then xdotool key L ; fi
+done
