@@ -1,7 +1,7 @@
 
 xmodmap -e "keycode 106 = less"
 xmodmap -e "keycode 82 = greater"
-xmodmap -e "keycode 63 = c"
+xmodmap -e "keycode 63 = x"
 xmodmap -e "keycode 81 = v"
 
 mpremote u0 run jogwheel.py &
