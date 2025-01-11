@@ -1,6 +1,8 @@
+
+xmodmap -e "keycode 106 = less"
+xmodmap -e "keycode 82 = greater"
+
 mpremote u0 run jogwheel.py &
-
 sleep 2
-
 portista
 
