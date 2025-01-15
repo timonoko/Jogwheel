@@ -40,13 +40,9 @@ while True:
             if Suunta=='':
                 if kaksi==[0,4] : Suunta='V'
                 if kaksi==[4,0] : Suunta='O'
+                LoppuVoima=0
                 Voima=0
                 EdVoima=0
-#            for x in range(luku[0]): print(' ',end=' ')
-#            print(luku[0])
-#            for x in range(luku[1]): print(' ',end=' ')
-#            print(luku[1])
-#            print(luku[2])
             laskuri=0
             if Suunta=='O':
                 if kaksi==[4,0]: Voima=1
@@ -56,8 +52,8 @@ while True:
                 if kaksi==[0,4]: Voima=1
             if kaksi==[0,0]: Voima=2
             if kaksi==[4,4]: Voima=4
-            if Voima!=EdVoima:
-                print(Suunta,Voima)
+            if EdVoima+1==Voima and Voima==3: LoppuVoima+=1 ; print(Suunta,LoppuVoima)
+            if EdVoima-1==Voima and Voima==1: LoppuVoima-=1 ; print(Suunta,LoppuVoima)
             EdVoima=Voima
         else:
             if ri>2 and le<2:

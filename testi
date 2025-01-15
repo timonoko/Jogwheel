@@ -1,0 +1,3 @@
+xdotool keydown KP_1
+sleep 0.5
+xdotool keyup KP_1
