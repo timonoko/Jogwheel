@@ -10,8 +10,6 @@ YEL.atten(ADC.ATTN_11DB)
 GRE.atten(ADC.ATTN_11DB)
 ORA.atten(ADC.ATTN_11DB)
 
-nolla=[3,3,0]
-
 def clear():
     print("\x1B\x5B2J", end="")
     print("\x1B\x5BH", end="")
@@ -24,13 +22,13 @@ def lue():
 def odota():
     while not(lue()[0]==3 and lue()[1]==3):
         pass
-laskuri=0
 
+nolla=[3,3,0]
+    
 edellinen=[0,0,0]
+
 while True:
     luku=lue();
-    le=luku[0]
-    ri=luku[1]
     if luku==nolla:
         pass
         Suunta=''
@@ -43,7 +41,6 @@ while True:
                 LoppuVoima=0
                 Voima=0
                 EdVoima=0
-            laskuri=0
             if Suunta=='O':
                 if kaksi==[4,0]: Voima=1
                 if kaksi==[0,4]: Voima=3
@@ -56,13 +53,13 @@ while True:
             if EdVoima-1==Voima and Voima==1: LoppuVoima-=1 ; print(Suunta,LoppuVoima)
             EdVoima=Voima
         else:
+            le=luku[0]
+            ri=luku[1]
             if ri>2 and le<2:
                 print("JL")
-                laskuri-=1
                 odota()
             if le>2 and ri<2:
                 print("JR")
-                laskuri+=1
                 odota()
     edellinen=luku
 
