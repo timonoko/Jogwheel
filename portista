@@ -3,12 +3,12 @@ stty -F /dev/ttyUSB0 115200
 prev=""
 while true; do
 read I < /dev/ttyUSB0
-if echo "$I" | grep "JR" ; then xdotool key KP_1 
-elif echo "$I" | grep "JL" ; then xdotool key KP_4 ;
-elif echo "$I" | grep "V 1" ; then xdotool key KP_5 ; 
-elif echo "$I" | grep "O 1" ; then xdotool key KP_2 ; 
-elif echo "$I" | grep "V 2" ; then xdotool key KP_6 ; 
-elif echo "$I" | grep "O 2" ; then xdotool key KP_3 ; 
+if echo "$I" | grep "JR" ; then xdotool key KP_End 
+elif echo "$I" | grep "JL" ; then xdotool key KP_Left ;
+elif echo "$I" | grep "V 1" ; then xdotool key KP_Begin ; 
+elif echo "$I" | grep "O 1" ; then xdotool key KP_Down
+elif echo "$I" | grep "V 2" ; then xdotool key KP_Right ;
+elif echo "$I" | grep "O 2" ; then xdotool key KP_Next ;
 elif echo "$I" | grep "V 3" ; then xdotool key KP_Add ; 
 elif echo "$I" | grep "O 3" ; then xdotool key KP_Enter ;
 fi
