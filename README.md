@@ -15,9 +15,9 @@ The wheel has 5 pin connector, from left
 
 5: pin ORA in jogwheel.py
 
-Portista.sh turns esp32 serial port signals into Cinelerra-keystrokes.
+"Portista" turns esp32 serial port signals into Cinelerra-keystrokes.
 
-It also resassigns number-pad into start-end-cut-paste-pad:
+"Kaynnistys" also resassigns number-pad into start-end-cut-paste-pad:
 
 "/" = start
 
