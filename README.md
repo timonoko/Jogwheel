@@ -16,4 +16,13 @@ The wheel has 5 pin connector, from left
 
 Portista.sh turns esp32 serial port signals into Cinelerra-keystrokes.
 
+It also resassigns number-pad into start-end-cut-paste-pad.
+
+/ = start
+
+- = end
+
+* = cut
+
+9 = paste 
 
