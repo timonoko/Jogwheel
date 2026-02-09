@@ -1,4 +1,5 @@
-Restored from 30 year old Sony Video-8 deck.
+Restored from 30 year old Sony Video-8 deck with ESP32.
+Communication via serial port.
 
 https://youtu.be/cx_EDWbfJ6s?si=pjZUPCCT4PbnqmQU
 
