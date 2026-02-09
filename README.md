@@ -20,9 +20,9 @@ It also resassigns number-pad into start-end-cut-paste-pad.
 
 / = start
 
-- = end
+"-" = end
 
-* = cut
+"*" = cut
 
 9 = paste 
 
