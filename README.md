@@ -1,7 +1,7 @@
 Restored from 30 year old Sony Video-8 deck with ESP32.
 Communication via serial port.
 
-https://youtu.be/cx_EDWbfJ6s?si=pjZUPCCT4PbnqmQU
+https://www.youtube.com/shorts/KlWYC6mzVkQ
 
 The wheel has 5 pin connector, from left
 
