@@ -28,3 +28,5 @@ The wheel has 5 pin connector, from left
 "9" = paste 
 
 "Youtube" seems to be aimed for Youtube edit?
+
+"jogwheel_gem.py" Gemini-version with Anglified variable names and fancy architecture. Not tested.
